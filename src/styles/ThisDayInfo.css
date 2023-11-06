@@ -1,0 +1,36 @@
+.dop_info_this_day{
+    box-shadow:2px 5px 25px -3px #B4B4B440;
+    padding: 20px;
+    max-width: 750px;
+    width: 100%;
+    background: white;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.info_this_day {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.logo_info_this_day {
+    background: white;
+    box-shadow:2px 5px 25px -3px #B4B4B440;
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.info_this_day_text {
+    font-size: 20px;
+    color:#939CB0;
+}
+.info_this_day span {
+    margin-left: 20px;
+    color:black; 
+}
+

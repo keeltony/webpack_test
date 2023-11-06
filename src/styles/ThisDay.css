@@ -1,0 +1,43 @@
+.this_day{
+    box-shadow:2px 5px 25px -3px #B4B4B440;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+
+
+
+}
+
+.this_day_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+.this_day_top svg {
+    width: 119px;
+    height: 119px;
+}
+.temp{
+    color:#4793FF;
+    font-size: 96px;
+    font-weight: 500px;
+}
+
+.this_day_name{
+    font-size: 25px;
+    color:black;
+}
+
+.this_day_down{
+    color: #939CB0;
+    font-size: 25px;
+}
+
+.this_day_down_text {
+    margin-bottom: 14px;
+}

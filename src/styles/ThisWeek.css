@@ -1,0 +1,71 @@
+.btn_this_week{
+    margin-top: 50px;
+    margin-bottom: 7px;
+    background: white;
+    box-shadow:2px 5px 25px -3px #B4B4B440;
+    border-radius: 20px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.btn_this_week span {
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+
+.card_week {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow:2px 5px 25px -3px #B4B4B440;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+.card_day {
+    background: #4793FF33;
+    margin: 20px;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.day {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 7px;
+}
+
+.numder_month {
+    color:#939CB0;
+    font-size: 14px;
+    margin-bottom: 12px;
+
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 13px;
+}   
+
+.temp_card {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.dop_temp_card, 
+.sky {
+    color: #939CB0;
+    font-size: 13px;
+}
+
+.dop_temp_card {
+    margin-bottom: 6px;
+}
