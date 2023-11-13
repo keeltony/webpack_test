@@ -8,6 +8,9 @@ import ThisDayInfo from "./ThisDayInfo.js";
 import ThisWeek from "./ThisWeek.js";
 
 
+
+
+
 function App () {
 
     return (
@@ -19,6 +22,7 @@ function App () {
                     <ThisDayInfo />
                 </div>
                 <ThisWeek />
+                
             </React.Fragment>
         </div>
     );

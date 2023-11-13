@@ -22,3 +22,15 @@ body {
     justify-content: space-between;
     margin-top: 30px;
 }
+
+@media (max-width:620px) {
+    .this_day_conteiner {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .this_day_conteiner:first-child {
+        margin-bottom: 30px;
+    }
+}
