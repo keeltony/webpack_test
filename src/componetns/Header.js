@@ -8,9 +8,9 @@ import  GlobalSvgSelector  from "../images/icons/GlobalSvgSelector";
 
 function Header() {
     const options = [
-        { value: 'chocolate', label: 'Москва' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
+        { value: 'Москва', label: 'Москва' },
+        { value: 'Санкт-Петербург', label: 'Санкт-Петербург' },
+        { value: 'Ярославль', label: 'Ярославль' }
       ]
     
     const StylesSelect = {control: (styles) => ({
@@ -35,7 +35,7 @@ function Header() {
             <div className="change_theme">
                 <GlobalSvgSelector id='change_theme'/>
             </div>
-            <Select defaultValue={options[0]} styles={StylesSelect} options={options} />
+            <Select id='selector_city' defaultValue={options[0]} styles={StylesSelect} options={options} />
         </div>
     </header>)
     }

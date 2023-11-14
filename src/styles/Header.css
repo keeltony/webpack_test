@@ -13,9 +13,13 @@ header {
 }
 
 .logo, 
-.change_theme{
+.change_theme {
     margin-right: 20px;
-}   
+} 
+
+.change_theme {
+    display: none;
+}
 
 .title {
     font-size: 25px;
@@ -26,3 +30,15 @@ header {
 
 }
 
+@media (max-width:1190px) {
+    .logo {
+        padding-left: 10px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .title {
+        display: none;
+    }
+}

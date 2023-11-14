@@ -32,6 +32,7 @@
     margin: 20px;
     padding: 13px;
     border-radius: 10px;
+    width: 110px;
 }
 
 .day {
@@ -68,4 +69,43 @@
 
 .dop_temp_card {
     margin-bottom: 6px;
+}
+
+
+@media (max-width:1190px) {
+    .card_day {
+        background: #4793FF33;
+        margin: 10px;
+        padding: 13px 5px;
+        border-radius: 10px;
+        width: 110px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .card_week {
+        flex-direction: column;
+    }
+
+    .card_day {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+}
+
+
+@media (max-width:400px) {
+    .card_day {
+        background: #4793FF33;
+        margin: 10px;
+        padding: 13px;
+        border-radius: 10px;
+        width: 85%;
+        display: block;
+    }
+
 }

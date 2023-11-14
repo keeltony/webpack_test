@@ -41,3 +41,56 @@
 .this_day_down_text {
     margin-bottom: 14px;
 }
+
+
+@media (max-width: 1190px) {
+    .this_day_top svg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .temp{
+        font-size: 66px;
+    }
+
+    .this_day{
+        max-width: 300px;
+    }
+
+    .this_day_name{
+        font-size: 20px;
+    }
+
+    .this_day_down {
+        font-size: 20px
+    }
+}
+
+@media (max-width:620px) {
+    .this_day{
+        padding-bottom: 30px;
+        max-width: 620px;
+
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:400px) {
+    .this_day_top svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .temp{
+        font-size: 46px;
+    }
+
+
+    .this_day_name{
+        font-size: 15px;
+    }
+
+    .this_day_down {
+        font-size: 12px
+    }
+}
