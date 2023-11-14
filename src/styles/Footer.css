@@ -1,0 +1,16 @@
+.footer-conteiner {
+    height: 30px;
+    background-color: #4793FF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 15px;
+}
+
+.text-create-name {
+    margin-right: 30px;
+}
+
+.text-create-name:hover {
+    color: red;
+}

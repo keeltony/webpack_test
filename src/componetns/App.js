@@ -6,6 +6,7 @@ import Header from './Header.js';
 import ThisDay from "./ThisDay.js";
 import ThisDayInfo from "./ThisDayInfo.js";
 import ThisWeek from "./ThisWeek.js";
+import Footer from "./Footer.js";
 
 
 
@@ -22,7 +23,9 @@ function App () {
                     <ThisDayInfo />
                 </div>
                 <ThisWeek />
-                
+                <div className="footer_div">
+                    <Footer />
+                </div>
             </React.Fragment>
         </div>
     );
