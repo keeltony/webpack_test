@@ -4,9 +4,19 @@ import '../styles/ThisDay.css';
 import GlobalSvgSelector from "../images/icons/GlobalSvgSelector";
 import Clock from "./Clock";
 
-function ThisDay(props){
+function ThisDay(propsprops){
     let date = new Date()
     let [hours, getHours] = useState(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
+
+   useEffect(() => {
+    const inter = setInterval(() => {
+        getHours(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
+    }, 1000);
+    
+    return () => clearInterval(inter);
+   },[])
+    
+
 
    useEffect(() => {
     const inter = setInterval(() => {
@@ -26,6 +36,7 @@ function ThisDay(props){
             <GlobalSvgSelector id='sunny'/>
         </div>
         <div className="this_day_down">
+            <div className="this_day_down_text">Время: <span>{date.getHours()}:{date.getMinutes()}</span></div>
             <div className="this_day_down_text">Время:{Clock()}</div>
             <div >Город: <span>Москва</span></div>
         </div>

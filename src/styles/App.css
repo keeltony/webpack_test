@@ -39,3 +39,19 @@ body {
         margin-bottom: 30px;
     }
 }
+.footer_div {
+
+}
+
+
+@media (max-width:620px) {
+    .this_day_conteiner {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .this_day_conteiner:first-child {
+        margin-bottom: 30px;
+    }
+}

@@ -10,6 +10,10 @@ import Footer from "./Footer.js";
 
 
 
+import Footer from "./Footer.js";
+
+
+
 
 
 function App () {
@@ -23,6 +27,7 @@ function App () {
                     <ThisDayInfo />
                 </div>
                 <ThisWeek />
+                
                 <div className="footer_div">
                     <Footer />
                 </div>
