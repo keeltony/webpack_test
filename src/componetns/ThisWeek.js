@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import '../styles/ThisWeek.css';
 import GlobalSvgSelector from "../images/icons/GlobalSvgSelector";
-import GetDate from "./GetDate";
+import DateWeek from "./DateWeek";
+
 
 
 function ThisWeek () {
-    let date = GetDate();
+    let date = DateWeek();
+
+    const [weatherThisWeek, setThisWeek] = useState('0');
+
+    useEffect(() => {
+        const lat = 1231;
+        const lon = 1231;
+        const apiKey = '123123'; // ваш apikey
+        const url = `https://api.openweathermap.org/data/2.5/forecast?lat=56.324&lon=38.823&appid=e9d8fa34428761940086551523bef397`; 
+
+        fetch(url)
+        .then((response) => response.json())
+        .then((date) => {
+            console.log(date.list);
+            setThisWeek(date.list);
+        });
+    }, [])
+
 
     function mounthInfo (month) {
         switch(month){
@@ -77,7 +95,7 @@ function ThisWeek () {
     }
 
 
-    return<div className="this_week">
+    return(<div className="this_week">
         <div className="btn_this_week">
             <span>На неделю</span>
         </div>
@@ -85,14 +103,14 @@ function ThisWeek () {
             {date.map(dat => <div className="card_day">
                 <div className="day">{(dat == date[0]) ? 'Сегодня': (dat == date[1] ? 'Завтра': dayInfo(new Date(dat).getDay()))}</div>
                 <div className="numder_month">{`${new Date(dat).getDate()} ${mounthInfo(new Date(dat).getMonth())}`}</div>
-                <div className="icon"><GlobalSvgSelector id='rain'/></div>
-                <div className="temp_card">+18°</div>
-                <div className="dop_temp_card">+15°</div>
-                <div className="sky">Облачно</div> 
+                {/* <div className="icon"><GlobalSvgSelector id='rain'/></div> */}
+                <div className="temp_card">{weatherThisWeek[date.indexOf(dat)].temp.day}°</div>
+                <div className="dop_temp_card">{weatherThisWeek[date.indexOf(dat)].feels_like.day}°</div>
+                {/* <div className="sky">Облачно</div>  */}
         </div>
         )}
     </div>
-</div>
+</div>)
 }
 
 export default ThisWeek;

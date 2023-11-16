@@ -1,4 +1,4 @@
-function GetDate () {
+function DateWeek () {
     let arrayDate = [];
 
 
@@ -8,6 +8,8 @@ function GetDate () {
     }
 
     return arrayDate;
+
 };
 
-export default GetDate;
+
+export default DateWeek;
