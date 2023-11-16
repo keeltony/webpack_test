@@ -10,10 +10,6 @@ import Footer from "./Footer.js";
 
 
 
-import Footer from "./Footer.js";
-
-
-
 
 
 function App () {

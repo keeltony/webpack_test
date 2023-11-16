@@ -18,10 +18,10 @@ function Clock() {
 
   const hours = time.getHours();
   const minutes = time.getMinutes();
-  const seconds = time.getSeconds();
 
 
-  const timeString = `${hours}:${minutes}:${seconds}`;
+
+  const timeString = `${hours}:${minutes}`;
 
   return timeString;
 }

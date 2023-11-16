@@ -4,6 +4,7 @@ import '../styles/ThisDayInfo.css';
 import GlobalSvgSelector from "../images/icons/GlobalSvgSelector";
 
 function ThisDayInfo(){
+    
     return<div className="dop_info_this_day">
         <div className="info_this_day">
             <div className="logo_info_this_day">
