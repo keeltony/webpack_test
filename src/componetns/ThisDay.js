@@ -29,7 +29,7 @@ function ThisDay(){
                 <div className="temp">{weatherThisDay}&deg;F</div>
                 <div className="this_day_name">Сегодня</div>
             </div>
-            {/* <GlobalSvgSelector id='sunny'/> */}  
+            <GlobalSvgSelector id='sunny'/>  
         </div>
         <div className="this_day_down">
             <div className="this_day_down_text">Время: {Clock()}</div>
